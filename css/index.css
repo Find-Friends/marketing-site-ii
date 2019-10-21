@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Fjalla One', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1367px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-content {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+}
+.navitems {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1367px;
+  width: 100%;
+  margin: 15px auto 15px;
+  display: flex;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+.navitems img {
+  width: 50px;
+}
+.navitems .atags {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  align-self: center;
+  height: 55px;
+  padding-left: 100px;
+}
+.navitems .twocontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2rem;
+}
+.navitems a {
+  text-decoration: none;
+  color: #67AFCB;
+  align-self: center;
+}
+.content h3 {
+  text-align: center;
+}
+.colorlink {
+  color: white;
+  background-color: #E4F1F6;
+  padding: 19px;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .banner {
+  max-height: 800px;
+  height: 800px;
+  background-image: url(../design-files/cta.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .inner {
+  background-color: white;
+  opacity: 0.8;
+  max-width: 680px;
+  padding: 32px;
+  text-align: center;
+}
+.home .buttons {
+  display: flex;
+  justify-content: center;
+}
+.home .buttons .btn {
+  margin: 0px 10px;
+  background-color: #1A3E4C;
+  width: 100px;
+  height: 45px;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: #E4F1F6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.home .buttons .btn:hover {
+  background-color: #E4F1F6;
+  color: #1A3E4C;
+}

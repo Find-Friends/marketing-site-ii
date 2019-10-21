@@ -1,0 +1,28 @@
+// Home Content
+
+.home {
+
+  .banner{
+    max-height: 800px;
+    height: 800px;
+    background-image: url(../design-files/cta.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner{
+    background-color:white;
+    opacity: .8;
+    max-width: 680px;
+    padding: 32px;
+    text-align: center;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    .btn{
+      .custom-btn(@bold-text-color, 100px, 45px, @text-over-button, 10px);
+    }
+  }
+}// home
