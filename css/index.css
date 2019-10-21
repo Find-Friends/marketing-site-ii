@@ -277,6 +277,7 @@ p {
 }
 .home .content {
   margin-top: 48px;
+  padding: 0px 32px;
 }
 .home .content .features {
   margin-top: 32px;
