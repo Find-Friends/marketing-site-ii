@@ -148,10 +148,10 @@ h2 {
   font-size: 3.2rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 .container {
@@ -211,15 +211,30 @@ p {
   background-color: #E4F1F6;
   padding: 19px;
 }
-footer {
+.footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: #092834;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.footer .footerbar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #E4F1F6;
+  text-decoration: none;
+}
+.footer .footerbar img {
+  width: 100px;
+}
+.footer .footerbar a {
+  color: #E4F1F6;
+  text-decoration: none;
 }
 .home .banner {
   max-height: 800px;
@@ -240,6 +255,7 @@ footer {
 .home .buttons {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 .home .buttons .btn {
   margin: 0px 10px;
@@ -258,4 +274,66 @@ footer {
 .home .buttons .btn:hover {
   background-color: #E4F1F6;
   color: #1A3E4C;
+}
+.home .content {
+  margin-top: 48px;
+}
+.home .content .features {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content .features .margin {
+  margin-left: 16px;
+}
+.home .content .features .feature-item {
+  display: flex;
+  flex-direction: column;
+}
+.home .content .features .feature-item p {
+  text-align: center;
+}
+.home .content .features .feature-item div {
+  margin-top: 32px;
+  padding: 0px 32px;
+}
+.home .content .features .feature-item img {
+  width: 100%;
+}
+.home .content .features .feature-item .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.home .content .layout {
+  margin-top: 48px;
+}
+.home .content .layout .image img {
+  width: 60%;
+  background-image: url(//design-files/cta.png);
+  background-position: center;
+  height: 300px;
+}
+.home .content .layout .text {
+  max-height: 800px;
+  height: 600px;
+  width: 60%;
+  background-image: url(../design-files/cta.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .content .layout .text .fixed {
+  position: absolute;
+  left: 50%;
+  opacity: 1;
+  text-align: start;
+}
+.home .content .layout .text .fixed h3 {
+  text-align: start;
+  padding: 5px 0px;
+}
+.home .content .layout .text .fixed .buttons {
+  justify-content: flex-start;
 }

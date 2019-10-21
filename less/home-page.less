@@ -2,27 +2,107 @@
 
 .home {
 
-  .banner{
-    max-height: 800px;
-    height: 800px;
-    background-image: url(../design-files/cta.png);
+  .banner {
+    max-height         : 800px;
+    height             : 800px;
+    background-image   : url(../design-files/cta.png);
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display            : flex;
+    justify-content    : center;
+    align-items        : center;
   }
-  .inner{
-    background-color:white;
-    opacity: .8;
-    max-width: 680px;
-    padding: 32px;
-    text-align: center;
+
+  .inner {
+    background-color: white;
+    opacity         : .8;
+    max-width       : 680px;
+    padding         : 32px;
+    text-align      : center;
   }
-  .buttons{
-    display: flex;
+
+  .buttons {
+    display        : flex;
     justify-content: center;
-    .btn{
+    margin-top     : 30px;
+
+    .btn {
       .custom-btn(@bold-text-color, 100px, 45px, @text-over-button, 10px);
     }
   }
-}// home
+
+  .content {
+    margin-top: 48px;
+
+    .features {
+      margin-top     : 32px;
+      display        : flex;
+      justify-content: space-between;
+
+      .margin {
+        margin-left: 16px;
+      }
+
+      .feature-item {
+        display       : flex;
+        flex-direction: column;
+
+        p {
+          text-align: center
+        }
+
+        div {
+          margin-top: 32px;
+          padding   : 0px 32px;
+        }
+
+        img {
+          width: 100%;
+
+        }
+
+        .text-content {
+          display        : flex;
+          flex-direction : column;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    .layout {
+      margin-top: 48px;
+      .image {
+        img {
+          width: 60%;
+          background-image: url(//design-files/cta.png);
+          background-position: center;
+          height: 300px;
+        }
+      }
+      .text {
+        max-height         : 800px;
+        height             : 600px;
+        width: 60%;
+        background-image   : url(../design-files/cta.png);
+        background-position: center;
+        display            : flex;
+        justify-content    : center;
+        align-items        : center;
+        .fixed{
+          position: absolute;
+          left: 50%;
+          opacity: 1;
+          text-align: start;
+         h3{
+           text-align: start;
+           padding: 5px 0px;
+         }
+         .buttons{
+           justify-content: flex-start;
+         }
+        }
+      }
+    }
+  }
+}
+
+// home
