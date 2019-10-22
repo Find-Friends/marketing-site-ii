@@ -315,6 +315,7 @@ audio {
 .home .buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
 }
 .home .buttons .btn {
@@ -339,6 +340,9 @@ audio {
   margin-top: 48px;
   padding: 0px 32px;
 }
+.home .content h3 {
+  text-align: center;
+}
 @media (max-width: 500px) {
   .home .content {
     padding: 0px;
@@ -348,6 +352,7 @@ audio {
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 1000px) {
   .home .content .features {
@@ -365,8 +370,9 @@ audio {
 }
 .home .content .features .feature-item {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 @media (max-width: 1000px) {
   .home .content .features .feature-item {
@@ -384,8 +390,9 @@ audio {
 }
 .home .content .features .feature-item .text-content {
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 .home .content .layout {
   margin-top: 48px;
