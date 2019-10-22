@@ -1,21 +1,40 @@
-.about{
-    .slideshow-container{
+.about {
+    .slideshow-container {
         text-align: center;
+
+        &:hover {
+            animation: hue-shift ease-in-out 4s infinite;
+        }
     }
-    .team{
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: center;
-        width:100%;
-        div{
-            width: 30%;
-            img{
-                width: 200px;
+
+    .team-container {
+        h3 {
+            text-align: center;
+            ;
+        }
+
+        .team {
+            display        : flex;
+            align-items    : flex-start;
+            flex-wrap      : wrap;
+            justify-content: center;
+            width          : 100%;
+            text-align     : center;
+
+            div {
+                background-color: beige;
+                width           : 30%;
+
+                img {
+                    width: 200px;
+
+                }
+            }
+
+            p {
+                padding: 25px;
             }
         }
-        p{
-            padding: 25px;
-        }
+
     }
 }

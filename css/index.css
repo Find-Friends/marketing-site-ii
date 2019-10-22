@@ -1,3 +1,26 @@
+@keyframes hue-shift {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+  15% {
+    filter: hue-rotate(180deg);
+  }
+  30 {
+    filter: hue-rotate(270deg);
+  }
+  45% {
+    filter: hue-rotate(360deg);
+  }
+  60% {
+    filter: hue-rotate(270deg);
+  }
+  75% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(90deg);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -417,19 +440,27 @@ audio {
 .about .slideshow-container {
   text-align: center;
 }
-.about .team {
+.about .slideshow-container:hover {
+  animation: hue-shift ease-in-out 4s infinite;
+}
+.about .team-container h3 {
+  text-align: center;
+}
+.about .team-container .team {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  text-align: center;
 }
-.about .team div {
+.about .team-container .team div {
+  background-color: beige;
   width: 30%;
 }
-.about .team div img {
+.about .team-container .team div img {
   width: 200px;
 }
-.about .team p {
+.about .team-container .team p {
   padding: 25px;
 }
