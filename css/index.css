@@ -230,7 +230,7 @@ audio {
   width: 100vw;
   color: #67AFCB;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .nav-content .nav .menu a {
     display: block;
     border-bottom: 1px solid #EAEAEB;
@@ -239,7 +239,7 @@ audio {
     padding-top: 60px;
   }
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .nav-content .nav .menu {
     text-align: center;
     width: 100%;
@@ -253,7 +253,7 @@ audio {
   width: 26px;
   float: right;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .nav-content .nav label {
     display: block;
     cursor: pointer;
@@ -270,7 +270,7 @@ audio {
   flex-direction: column;
   width: 100%;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .nav-content .nav {
     align-self: flex-end;
   }
@@ -347,7 +347,7 @@ audio {
 .home .content h3 {
   text-align: center;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .home .content {
     padding: 0px;
   }
@@ -367,7 +367,7 @@ audio {
 .home .content .features .margin {
   margin-left: 16px;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .home .content .features .margin {
     margin-left: 0px;
   }
@@ -419,7 +419,7 @@ audio {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .home .content .layout .text {
     width: 100%;
   }
@@ -430,7 +430,7 @@ audio {
   opacity: 1;
   text-align: start;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .home .content .layout .text .fixed {
     left: 0%;
     opacity: 0.8;
@@ -441,7 +441,7 @@ audio {
   text-align: start;
   padding: 5px 0px;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .home .content .layout .text .fixed h3 {
     text-align: center;
   }
@@ -451,7 +451,7 @@ audio {
   justify-content: flex-start;
   align-items: flex-end;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .home .content .layout .text .fixed .buttons {
     justify-content: center;
   }
@@ -483,7 +483,7 @@ audio {
   text-align: center;
   background-color: beige;
 }
-@media (max-width: 525px) {
+@media (max-width: 550px) {
   .about .team-container .team {
     flex-direction: column;
   }
