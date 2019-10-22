@@ -163,7 +163,6 @@ p {
   position: sticky;
   top: 0;
   width: 100%;
-  margin: 0 auto;
   opacity: 0.8;
   display: flex;
   justify-content: space-between;
@@ -173,6 +172,7 @@ p {
   background-color: white;
   z-index: 1;
   max-width: 1367px;
+  margin: 0 auto;
 }
 .nav-content img {
   width: 50px;
@@ -184,17 +184,12 @@ p {
 .nav-content .friend-finder h3 {
   color: #67AFCB;
 }
-.nav {
+.nav-content .nav {
   text-align: right;
   background-color: white;
   align-self: center;
 }
-@media (max-width: 500px) {
-  .nav {
-    align-self: flex-end;
-  }
-}
-.menu a {
+.nav-content .nav .menu a {
   clear: right;
   text-decoration: none;
   color: gray;
@@ -202,40 +197,49 @@ p {
   width: 100vw;
   color: #67AFCB;
 }
-span {
-  color: #54D17A;
-}
-label {
-  margin: 0 20px 0 0;
-  font-size: 32px;
-  display: none;
-  width: 26px;
-  float: right;
-}
-#toggle {
-  display: none;
-}
-@media only screen and (max-width: 500px) {
-  label {
-    display: block;
-    cursor: pointer;
-  }
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-  .menu a {
+@media (max-width: 500px) {
+  .nav-content .nav .menu a {
     display: block;
     border-bottom: 1px solid #EAEAEB;
     margin: 0;
     font-size: 1.8rem;
     padding-top: 60px;
   }
-  #toggle:checked + .menu {
-    display: flex;
-    flex-direction: column;
+}
+@media (max-width: 500px) {
+  .nav-content .nav .menu {
+    text-align: center;
     width: 100%;
+    display: none;
+  }
+}
+.nav-content .nav label {
+  margin: 0 20px 0 0;
+  font-size: 32px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+@media (max-width: 500px) {
+  .nav-content .nav label {
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav-content .nav span {
+  color: #54D17A;
+}
+.nav-content .nav #toggle {
+  display: none;
+}
+.nav-content .nav #toggle:checked + .menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-content .nav {
+    align-self: flex-end;
   }
 }
 .footer {

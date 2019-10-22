@@ -1,86 +1,103 @@
 // Navigation code here
-.nav-content{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    margin: 0 auto;
-    opacity: (.8);
-    display: flex;  
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-direction: row;
-    flex-wrap: wrap;
+.nav-content {
+    position        : sticky;
+    top             : 0;
+    width           : 100%;
+    margin          : 0 auto;
+    opacity         : (.8);
+    display         : flex;
+    justify-content : space-between;
+    align-items     : flex-end;
+    flex-direction  : row;
+    flex-wrap       : wrap;
     background-color: white;
-    z-index: 1;
-    max-width: 1367px;
-    img{
+    z-index         : 1;
+    max-width       : 1367px;
+    margin: 0 auto;
+
+    img {
         width: 50px;
     }
-    .friend-finder{
-        display: flex;
+
+    .friend-finder {
+        display    : flex;
         align-items: flex-end;
-        h3{
+
+        h3 {
             color: @nav-button-color;
         }
     }
-}
-.nav {
-    text-align: right;
-    background-color: white;
-    align-self: center;
-    @media @phone{
-        align-self: flex-end;
 
-    }
-}
-.menu a {
-    clear: right;
-    text-decoration: none;
-    color: gray;
-    margin: 0 10px;
-    width: 100vw;
-    color: @nav-button-color;
-}
+    .nav {
+        text-align      : right;
+        background-color: white;
+        align-self      : center;
 
-span {
-    color: #54D17A;
-}
+        .menu {
 
-label {
-    margin: 0 20px 0 0;
-    font-size: 32px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-#toggle {
-    display: none;
-}
+            a {
+                clear          : right;
+                text-decoration: none;
+                color          : gray;
+                margin         : 0 10px;
+                width          : 100vw;
+                color          : @nav-button-color;
+
+                @media @phone {
+                    display      : block;
+                    border-bottom: 1px solid #EAEAEB;
+                    margin       : 0;
+                    font-size    : 1.8rem;
+                    padding-top  : 60px;
+
+                }
+
+            }
+
+            @media @phone {
+                text-align: center;
+                width     : 100%;
+                display   : none;
+            }
+        }
 
 
-@media only screen and (max-width: 500px) {
-    label {
-        display: block;
-        cursor: pointer;
+        label {
+            margin   : 0 20px 0 0;
+            font-size: 32px;
+            display  : none;
+            width    : 26px;
+            float    : right;
+
+            @media @phone {
+                display: block;
+                cursor : pointer;
+            }
+        }
+
+        span {
+            color: #54D17A;
+        }
+
+        #toggle {
+            display: none;
+
+            &:checked+.menu {
+                display       : flex;
+                flex-direction: column;
+                width         : 100%;
+            }
+        }
+
+        @media @phone {
+            align-self: flex-end;
+
+        }
     }
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-    .menu a {
-        display: block;
-        border-bottom: 1px solid #EAEAEB;
-        margin: 0;
-        font-size: 1.8rem;
-        padding-top: 60px;
-     
-    }
-    #toggle:checked + .menu {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    
+
+
+
+
+
+
 }
