@@ -337,6 +337,7 @@ p {
 .home .content .features .feature-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media (max-width: 1000px) {
   .home .content .features .feature-item {
@@ -348,7 +349,6 @@ p {
 }
 .home .content .features .feature-item div {
   margin-top: 32px;
-  padding: 0px 32px;
 }
 .home .content .features .feature-item img {
   width: 100%;
@@ -399,7 +399,9 @@ p {
   }
 }
 .home .content .layout .text .fixed .buttons {
+  display: flex;
   justify-content: flex-start;
+  align-items: flex-end;
 }
 @media (max-width: 500px) {
   .home .content .layout .text .fixed .buttons {
