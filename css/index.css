@@ -443,6 +443,12 @@ audio {
 .about .slideshow-container:hover {
   animation: hue-shift ease-in-out 4s infinite;
 }
+@media (max-width: 1000px) {
+  .about .slideshow-container .slider {
+    width: 80%;
+    height: 80%;
+  }
+}
 .about .team-container h3 {
   text-align: center;
 }
@@ -454,9 +460,26 @@ audio {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .about .team-container .team {
+    flex-direction: column;
+  }
+}
 .about .team-container .team div {
+  display: flex;
+  flex-direction: column;
   background-color: beige;
   width: 30%;
+}
+@media (max-width: 1300px) {
+  .about .team-container .team div {
+    width: 35%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .team-container .team div {
+    width: 100%;
+  }
 }
 .about .team-container .team div img {
   width: 200px;

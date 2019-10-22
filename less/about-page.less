@@ -5,6 +5,12 @@
         &:hover {
             animation: hue-shift ease-in-out 4s infinite;
         }
+        .slider{
+            @media @tablet{
+                width: 80%;
+                height: 80%;
+            }
+        }
     }
 
     .team-container {
@@ -20,10 +26,21 @@
             justify-content: center;
             width          : 100%;
             text-align     : center;
+            @media @phone{
+                flex-direction: column;
+            }
 
             div {
+                display: flex;
+                flex-direction: column;
                 background-color: beige;
                 width           : 30%;
+                @media @stretch{
+                    width: 35%;
+                }
+                @media @tablet{
+                    width: 100%;
+                }
 
                 img {
                     width: 200px;
