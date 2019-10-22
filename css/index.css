@@ -159,6 +159,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+audio {
+  display: none;
+}
 .nav-content {
   position: sticky;
   top: 0;
@@ -181,7 +184,10 @@ p {
   display: flex;
   align-items: flex-end;
 }
-.nav-content .friend-finder h3 {
+.nav-content .friend-finder a {
+  text-decoration: none;
+}
+.nav-content .friend-finder a h3 {
   color: #67AFCB;
 }
 .nav-content .nav {
@@ -407,4 +413,23 @@ p {
   .home .content .layout .text .fixed .buttons {
     justify-content: center;
   }
+}
+.about .slideshow-container {
+  text-align: center;
+}
+.about .team {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.about .team div {
+  width: 30%;
+}
+.about .team div img {
+  width: 200px;
+}
+.about .team p {
+  padding: 25px;
 }
