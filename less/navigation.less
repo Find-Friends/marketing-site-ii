@@ -98,9 +98,11 @@ audio {
             display: none;
 
             &:checked+.menu {
+                @media @phone{
                 display       : flex;
                 flex-direction: column;
                 width         : 100%;
+                }
             }
         }
 

@@ -265,10 +265,12 @@ audio {
 .nav-content .nav #toggle {
   display: none;
 }
-.nav-content .nav #toggle:checked + .menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+@media (max-width: 550px) {
+  .nav-content .nav #toggle:checked + .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media (max-width: 550px) {
   .nav-content .nav {
