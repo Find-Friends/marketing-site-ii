@@ -1,7 +1,8 @@
 // Navigation code here
-audio{
+audio {
     display: none;
 }
+
 .nav-content {
     position        : sticky;
     top             : 0;
@@ -16,7 +17,7 @@ audio{
     background-color: white;
     z-index         : 1;
     max-width       : 1367px;
-    margin: 0 auto;
+    margin          : 0 auto;
 
     img {
         width: 50px;
@@ -25,12 +26,21 @@ audio{
     .friend-finder {
         display    : flex;
         align-items: flex-end;
-        a{
+
+        a {
             text-decoration: none;
-        h3 {
-            color: @nav-button-color;
+
+            h3 {
+                color: @nav-button-color;
+            }
+
         }
-    }
+
+        .mute {
+            img{
+                width: 20px;
+            }
+        }
     }
 
     .nav {

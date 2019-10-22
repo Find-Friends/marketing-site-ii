@@ -42,7 +42,6 @@
     .features {
       margin-top     : 32px;
       .flex(space-between, center);
-
       @media @tablet {
         flex-direction: column;
         margin-bottom : 20px;
@@ -59,9 +58,11 @@
       .feature-item {   
         .flex(space-between, center);
         flex-direction: column;
+        width: 33%;
 
         @media @tablet {
           margin-bottom: 20px;
+          width: 100%;
         }
 
         p {
@@ -74,6 +75,10 @@
 
         img {
           width: 100%;
+          max-height: 220px;
+          @media @tablet{
+            max-height: 100%;
+          }
 
         }
 
