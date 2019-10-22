@@ -236,7 +236,7 @@ audio {
     border-bottom: 1px solid #EAEAEB;
     margin: 0;
     font-size: 1.8rem;
-    padding-top: 60px;
+    padding-top: 25px;
   }
 }
 @media (max-width: 550px) {
@@ -257,6 +257,10 @@ audio {
   .nav-content .nav label {
     display: block;
     cursor: pointer;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 15px;
   }
 }
 .nav-content .nav span {
