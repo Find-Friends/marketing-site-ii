@@ -315,7 +315,7 @@ audio {
 .home .banner {
   max-height: 800px;
   height: 800px;
-  background-image: url(../img/cta.webp);
+  background-image: url(../img/cta.jpg);
   background-position: center;
   display: flex;
   justify-content: center;
@@ -424,7 +424,7 @@ audio {
   max-height: 800px;
   height: 600px;
   width: 60%;
-  background-image: url(../img/cta.webp);
+  background-image: url(../img/cta.jpg);
   background-position: center;
   display: flex;
   justify-content: center;
