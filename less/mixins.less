@@ -1,0 +1,53 @@
+// Mixins Here
+@phone: ~"(max-width: 550px)";
+@tablet: ~"(max-width: 1000px)";
+@stretch: ~"(max-width: 1300px)";
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.hoverColorSwap(){
+  background-color: @txt-color;
+  color: @bg-color;
+}
+.custom-btn(@bg-color, @width, @height, @txt-color, @radius){
+  margin: 0px 10px;
+  background-color: @bg-color;
+  width: @width;
+  height: @height;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: @radius;
+  color:@txt-color;
+  text-align: center;
+ .flex(center, center);
+  text-decoration: none;
+  &:hover{
+    .hoverColorSwap();
+
+}
+}
+@keyframes hue-shift {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+  15% {
+    filter: hue-rotate(180deg);
+  }
+  30 {
+      filter: hue-rotate(270deg);
+  }
+  45% {
+    filter: hue-rotate(360deg);
+  }
+  60% {
+    filter: hue-rotate(270deg);
+  }
+  75% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(90deg);
+  }
+}

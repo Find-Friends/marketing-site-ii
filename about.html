@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Friend Finding Application">
+    <meta name="keywords" content="Dating,Lonely,Application,Innovation">
+    <meta name="author" content="Friend Finder">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Friend Finder - Meet The Team</title>
+    <link rel="icon" href="img/friendship.png" alt="a cartoon image of two family members close together">
+
+    <audio id="music" controls autoplay>
+        <source src="music/bensound-summer.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <section class="nav-content">
+        <div class="friend-finder">
+            <img src="img/friendship.png" alt="a cartoon image of two family members close together">
+            <a href="index.html">
+                <h3>Friend Finder</h3>
+            </a>
+            <div class="mute">
+                <img src="img/mute.jpg" onclick="document.getElementById('music').pause()" alt="Icon of a speaker with a line through it, Mute Icon"/>
+            </div>
+        </div>
+        <div class=" nav">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <a href="about.html">About Us</a>
+                    <a href="https://github.com/Find-Friends">Contact</a>
+                    <a href="https://friend-finder.now.sh/login">Login</a>
+                    <a href="https://friend-finder.now.sh/signup"><span>Register</span></a>
+                </div>
+            </div>
+    </section>
+    <div id="about" class="container about">
+        <div class="slideshow-container">
+
+            <script>
+                var i = 0;
+                var images = [];
+                var time = 2265;
+
+                images[0] = 'https://avatars0.githubusercontent.com/u/15080191?s=400&v=4';
+                images[1] = 'https://avatars0.githubusercontent.com/u/20715519?s=400&v=4';
+                images[2] = 'https://avatars1.githubusercontent.com/u/52627840?s=400&v=4';
+                images[3] = 'https://avatars1.githubusercontent.com/u/53716622?s=400&v=4';
+                images[4] = 'https://avatars0.githubusercontent.com/u/55959428?s=400&v=4';
+                images[5] = 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/66387390_1110299159165326_3691737077692497920_n.jpg?_nc_cat=103&_nc_oc=AQkJVl0L9LkVyw0qOYZblJ3ng7fYic--1X3bKJsPGeNK0exxXqQENEDJKRyN57ZU98d2BhLjwyCIRhwJinbUDnXa&_nc_ht=scontent-sjc3-1.xx&oh=1e5cb18a8141340ca94aa2388b97eeaa&oe=5E22BAF8';
+
+                function changeImg() {
+                    document.slide.src = images[i];
+
+                    if (i < images.length - 1) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    setTimeout('changeImg()', time);
+                }
+                window.onload = changeImg;
+            </script>
+            <img class="slider" name="slide" width="400" height="400" alt="slideshow of every team member">
+        </div>
+        <div class="team-container">
+            <h3>Meet The Team</h3>
+            <div class="team">
+
+                <div>
+                    <a href="https://www.sethlachman.com"><img
+                            src="https://avatars0.githubusercontent.com/u/15080191?s=400&v=4"
+                            alt="Project Lead Seth Lachman"></a>
+
+                    <h3>Seth Lachman</h3>
+                    <h4>Backend</h4>
+                    <p>I love coffee, and it doesn't hurt that it helps me solve challenging technical problems.</p>
+
+                </div>
+                <div>
+                    <a href="https://github.com/rashmipoddar"> <img
+                            src='https://avatars0.githubusercontent.com/u/20715519?s=400&v=4'
+                            alt="Front End Developer Rashmi Poddar"></a>
+                    <h3>Rashmi Poddar</h3>
+                    <h4>Front End Developer</h4>
+                    <p>I love reading and hiking</p>
+
+                </div>
+                <div>
+                    <a href="https://github.com/BenSolt"> <img
+                            src='https://avatars1.githubusercontent.com/u/52627840?s=400&v=4'
+                            alt="Front End Devloper Ben Solt"> </a>
+                    <h3>Ben Solt</h3>
+                    <h4>Front End Developer: React 1</h4>
+                    <p> Attending Lambda school to become a Web Developer. - Have a Bachelors in Media Arts and
+                        Animation. - Experience with Adobe Creative Suite, Unreal Engine</p>
+
+                </div>
+                <div>
+                    <a href="https://github.com/DannyManzietti"> <img
+                            src='https://avatars1.githubusercontent.com/u/53716622?s=400&v=4'
+                            alt="Front End Developer Danny Manzietti"></a>
+                    <h3>Danny Manzietti</h3>
+                    <h4>Front End Developer: React 2</h4>
+                    <p>Loves food, animals and camping.</p>
+
+                </div>
+                <div>
+                    <a href="https://github.com/msearles25"> <img
+                            src='https://avatars0.githubusercontent.com/u/55959428?s=400&v=4' alt="Front End UI Michael Searles">
+                    </a>
+                    <h3>Michael Searles</h3>
+                    <h4>Front-End UI</h4>
+                    <p>I love coffee, and it doesn't hurt that it helps me solve challenging technical problems.</p>
+
+                </div>
+                <div>
+                    <a href="https://github.com/BryanKAdams"> <img
+                            src='https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/66387390_1110299159165326_3691737077692497920_n.jpg?_nc_cat=103&_nc_oc=AQkJVl0L9LkVyw0qOYZblJ3ng7fYic--1X3bKJsPGeNK0exxXqQENEDJKRyN57ZU98d2BhLjwyCIRhwJinbUDnXa&_nc_ht=scontent-sjc3-1.xx&oh=1e5cb18a8141340ca94aa2388b97eeaa&oe=5E22BAF8'
+                            alt="Front End UI Bryan Adams"></a>
+                    <h3>Bryan Adams</h3>
+                    <h4>Front-End UI</h4>
+                    <p>Father of the Sea. Married to a Princess. Builder of Virtual Things</p>
+
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+            <div class="footerbar">
+                <div class="twocontainer">
+                    <div>
+                        <img src="img/friendship.png" alt="a cartoon image of two family members close together">
+                    </div>
+                    <div>
+                        <a href="index.html">Friend Finder</a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="about.html">About Us</a>
+                    <a href="https://github.com/Find-Friends ">Contact</a>
+                    <a href="https://friend-finder.now.sh/login">Sign In</a>
+                    <a href="https://friend-finder.now.sh/signup">Register</a>
+                    <a href="citations.html">Citations</a>
+                </div>
+                <a href="https://www.bensound.com/royalty-free-music">"Royalty Free Music from Bensound"</a>
+
+                <h6>© 2019 Friend-Finder | All Rights Reserved </h6>
+            </div>
+
+        </section>
+</body>
+
+</html>

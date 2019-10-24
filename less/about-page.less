@@ -1,0 +1,60 @@
+.about {
+    .slideshow-container {
+        text-align: center;
+        background-color: beige;
+
+        &:hover {
+            animation: hue-shift ease-in-out 4s infinite;
+        }
+        .slider{
+            @media @tablet{
+                width: 80%;
+                height: 80%;
+            }
+        }
+    }
+
+    .team-container {
+        h3 {
+            text-align: center;
+            background-color: beige;
+            padding: 20px 0px;
+        }
+
+        .team {
+            display        : flex;
+            align-items    : flex-start;
+            flex-wrap      : wrap;
+            justify-content: center;
+            width          : 100%;
+            text-align     : center;
+            background-color:beige;
+            @media @phone{
+                flex-direction: column;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                width           : 30%;
+                margin: 25px 0px;
+                @media @stretch{
+                    width: 35%;
+                }
+                @media @tablet{
+                    width: 100%;
+                }
+
+                img {
+                    width: 200px;
+
+                }
+            }
+
+            p {
+                padding: 25px;
+            }
+        }
+
+    }
+}

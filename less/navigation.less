@@ -1,0 +1,124 @@
+// Navigation code here
+audio {
+    display: none;
+}
+
+.nav-content {
+    position        : sticky;
+    top             : 0;
+    width           : 100%;
+    margin          : 0 auto;
+    opacity         : (.8);
+    display         : flex;
+    justify-content : space-between;
+    align-items     : flex-end;
+    flex-direction  : row;
+    flex-wrap       : wrap;
+    background-color: white;
+    z-index         : 1;
+    max-width       : 1367px;
+    margin          : 0 auto;
+
+    img {
+        width: 50px;
+    }
+
+    .friend-finder {
+        display    : flex;
+        align-items: flex-end;
+
+        a {
+            text-decoration: none;
+
+            h3 {
+                color: @bold-text-color;
+            }
+
+        }
+
+        .mute {
+            img{
+                width: 20px;
+            }
+        }
+    }
+
+    .nav {
+        text-align      : right;
+        background-color: white;
+        align-self      : center;
+
+        .menu {
+
+            a {
+                clear          : right;
+                text-decoration: none;
+                color          : gray;
+                margin         : 0 10px;
+                width          : 100vw;
+                color          : @nav-button-color;
+
+                @media @phone {
+                    display      : block;
+                    border-bottom: 1px solid #EAEAEB;
+                    margin       : 0;
+                    font-size    : 1.8rem;
+                    padding-top  : 25px;
+
+                }
+
+            }
+
+            @media @phone {
+                text-align: center;
+                width     : 100%;
+                display   : none;
+            }
+        }
+
+
+        label {
+            margin   : 0 20px 0 0;
+            font-size: 32px;
+            display  : none;
+            width    : 26px;
+            float    : right;
+
+            @media @phone {
+                display: block;
+                cursor : pointer;
+                position: absolute;
+                top: 0%;
+                right: 0%;
+                padding: 15px;
+            }
+        }
+
+        span {
+            color: #54D17A;
+        }
+
+        #toggle {
+            display: none;
+
+            &:checked+.menu {
+                @media @phone{
+                display       : flex;
+                flex-direction: column;
+                width         : 100%;
+                }
+            }
+        }
+
+        @media @phone {
+            align-self: flex-end;
+
+        }
+    }
+
+
+
+
+
+
+}
