@@ -333,11 +333,12 @@ audio {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: 100%;
 }
 .home .buttons .btn {
   margin: 0px 10px;
   background-color: #1A3E4C;
-  width: 200px;
+  width: 50%;
   height: 45px;
   font-size: 1rem;
   border-radius: 10px;
@@ -437,36 +438,36 @@ audio {
     width: 100%;
   }
 }
-.home .content .layout .text .fixed {
+.home .content .layout .text .buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+@media (max-width: 550px) {
+  .home .content .layout .text .buttons {
+    justify-content: center;
+  }
+}
+.home .fixed {
   position: absolute;
   left: 50%;
   opacity: 1;
   text-align: start;
 }
 @media (max-width: 550px) {
-  .home .content .layout .text .fixed {
+  .home .fixed {
     left: 0%;
     opacity: 0.8;
     text-align: center;
   }
 }
-.home .content .layout .text .fixed h3 {
+.home .fixed h3 {
   text-align: start;
   padding: 5px 0px;
 }
 @media (max-width: 550px) {
-  .home .content .layout .text .fixed h3 {
+  .home .fixed h3 {
     text-align: center;
-  }
-}
-.home .content .layout .text .fixed .buttons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-@media (max-width: 550px) {
-  .home .content .layout .text .fixed .buttons {
-    justify-content: center;
   }
 }
 .about .slideshow-container {
