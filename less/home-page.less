@@ -20,7 +20,7 @@
 
   .buttons {
     .flex(center, center);
-    margin-top     : 30px;
+    margin-top: 30px;
 
     .btn {
       .custom-btn(@bold-text-color, 200px, 45px, @text-over-button, 10px);
@@ -30,7 +30,8 @@
   .content {
     margin-top: 48px;
     padding   : 0px 32px;
-    h3{
+
+    h3 {
       text-align: center;
     }
 
@@ -40,8 +41,9 @@
 
 
     .features {
-      margin-top     : 32px;
+      margin-top: 32px;
       .flex(space-between, center);
+
       @media @tablet {
         flex-direction: column;
         margin-bottom : 20px;
@@ -55,14 +57,14 @@
         }
       }
 
-      .feature-item {   
+      .feature-item {
         .flex(space-between, center);
         flex-direction: column;
-        width: 33%;
+        width         : 33%;
 
         @media @tablet {
           margin-bottom: 20px;
-          width: 100%;
+          width        : 100%;
         }
 
         p {
@@ -74,18 +76,19 @@
         }
 
         img {
-          width: 100%;
+          width : 100%;
           height: 100%;
-          @media @tablet{
+
+          @media @tablet {
             max-height: 100%;
           }
 
         }
 
         .text-content {
-          .flex(flex-end,center);
+          .flex(flex-end, center);
           flex-basis: 100%;
-          width: 100%;
+          width     : 100%;
         }
       }
     }
@@ -99,42 +102,43 @@
         width              : 60%;
         background-image   : url(../img/cta.jpg);
         background-position: center;
-        .flex(center,center);
+        .flex(center, center);
+
         @media @phone {
           width: 100%;
         }
 
-        .fixed {
-          position  : absolute;
-          left      : 50%;
-          opacity   : 1;
-          text-align: start;
+
+        .buttons {
+          .flex(flex-start, flex-end);
 
           @media @phone {
-            left   : 0%;
-            opacity: .8;
-            text-align: center;
-          }
-
-          h3 {
-            text-align: start;
-            padding   : 5px 0px;
-            @media @phone{
-              text-align: center;
-          }
-          }
-
-          .buttons {
-            .flex(flex-start,flex-end);
-
-            @media @phone {
-              justify-content: center;
-            }
+            justify-content: center;
           }
         }
       }
     }
   }
-}
+  .fixed {
+    position  : absolute;
+    left      : 50%;
+    opacity   : 1;
+    text-align: start;
 
-// home
+    @media @phone {
+      left      : 0%;
+      opacity   : .8;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: start;
+      padding   : 5px 0px;
+
+      @media @phone {
+        text-align: center;
+      }
+    }
+  }
+
+  // home
